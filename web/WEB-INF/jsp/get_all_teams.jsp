@@ -17,6 +17,7 @@
         <c:forEach items="${datos}" var="dato">
             <label>${dato[0]}</label><label>${dato[1]}</label>
         </c:forEach>
+            <h1>Hello World2</h1>
         <c:forEach items="${datos2}" var="dato2">
             <label>${dato2.id}</label><label>${dato2.name}</label>
         </c:forEach>

@@ -6,6 +6,7 @@
 package Controller;
 import Model.HibernateUtil;
 import Model.TeamsModel;
+import Repository.RepositoryTeams;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.hibernate.HibernateException;
@@ -29,26 +30,24 @@ public class TeamsController {
         String error = "-1";
         //String estado_cuenta = request.getParameter("estado_cuenta");
         
-        
-        
-        
         Session session = HibernateUtil.getSessionFactory().openSession();
         session.beginTransaction();
         
         try {
             
             String procedure = "SELECT * FROM sp_allteams()";
-            String procedure2 = "SELECT * FROM sp_allteams()";
+            
             System.out.println(procedure);
             
             Query query = session.createSQLQuery(procedure);
-            Query query2 = session.createSQLQuery(procedure2).setResultTransformer(Transformers.aliasToBean(TeamsModel.class));
+            
             
             List<Object[]> result = query.list();
-            List<TeamsModel> result2 = query2.list();
+            RepositoryTeams repository = new RepositoryTeams();
+            List<TeamsModel> resultado = repository.getAllTemas();
             
             mv.addObject("datos", result);
-            mv.addObject("datos2", result2);
+            mv.addObject("datos2", resultado);
 
             session.getTransaction().commit();
             session.close();
