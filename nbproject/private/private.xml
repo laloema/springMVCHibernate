@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ADMON/Documents/EjemploHibernate/web/redirect.jsp</file>
+            <file>file:/C:/Users/ADMON/Documents/EjemploHibernate/src/java/Controller/TeamsController.java</file>
+            <file>file:/C:/Users/ADMON/Documents/EjemploHibernate/web/WEB-INF/jsp/get_all_teams.jsp</file>
+            <file>file:/C:/Users/ADMON/Documents/EjemploHibernate/web/WEB-INF/dispatcher-servlet.xml</file>
+            <file>file:/C:/Users/ADMON/Documents/EjemploHibernate/src/java/Model/TeamsModel.java</file>
+            <file>file:/C:/Users/ADMON/Documents/EjemploHibernate/src/java/Model/HibernateUtil.java</file>
+        </group>
+    </open-files>
+</project-private>
